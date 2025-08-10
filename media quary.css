@@ -1,0 +1,13 @@
+@media (max-width: 600px) {
+  html {
+    width: 100%;
+  }
+  .main .container {
+    display: grid;
+    grid-template-columns: 0vw 1fr 10vw;
+    overflow: hidden;
+  }
+  .todo-app {
+    width: 0;
+  }
+}

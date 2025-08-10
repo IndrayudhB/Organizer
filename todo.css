@@ -1,0 +1,108 @@
+.todo-app {
+  width: 100%;
+  max-width: 540px;
+  background: transparent;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+}
+.todo-app h2 {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.todo-app h2 img {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px; /* space between input and button */
+  max-width: 100%; /* container adapts full width */
+  width: 100%; /* take full width of parent */
+  padding: 0 10px; /* optional padding */
+  box-sizing: border-box;
+}
+
+.row input {
+  flex-grow: 1; /* input takes all remaining space */
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.row button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 30px;
+  border: none;
+  background-color: #4e085f;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0; /* button size fixed, doesn't shrink */
+  transition: background-color 0.3s ease;
+}
+
+.row button:hover {
+  background-color: #a0522d;
+}
+.white-text {
+  /*text color */
+  color: white;
+}
+ul li {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li.checked {
+  color: antiquewhite;
+  text-decoration: line-through;
+}
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(images/checked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left: 8px;
+}
+ul li span {
+  position: absolute;
+  right: 0;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  color: #555;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+ul li span:hover {
+  background: red;
+}

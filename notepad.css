@@ -1,0 +1,68 @@
+/* Scoped Notepad styles inside .notepad-section */
+
+.notepad-section form {
+  background-color: #eee;
+  width: max-content;
+  padding: 5px;
+  margin: 10px;
+  border-radius: 24px;
+  display: flex;
+  gap: 10px;
+}
+
+.notepad-section form input,
+.notepad-section form button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-size: large;
+  cursor: pointer;
+}
+
+.notepad-section form input::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+.notepad-section form input::-webkit-color-swatch {
+  border-radius: 50%;
+}
+
+.notepad-section #list textarea {
+  all: unset;
+  color: #fff;
+}
+
+.notepad-section .note textarea::placeholder {
+  color: #999;
+}
+
+.notepad-section #list .note {
+  background: #333;
+  width: max-content;
+  border-top: 30px solid #e6b905;
+  border-radius: 10px;
+  box-shadow: 0 20px 50px #0004;
+  padding: 10px;
+  position: absolute;
+  top: 200px;
+  left: 400px;
+}
+
+.notepad-section #list .note span {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  height: 30px;
+  font-family: cursive;
+  font-size: large;
+  padding-right: 10px;
+  cursor: pointer;
+}
+.download {
+  cursor: pointer;
+  font-size: 30px;
+  color: #eee;
+  margin: 10px;
+}

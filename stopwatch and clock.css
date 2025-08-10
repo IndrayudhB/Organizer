@@ -1,0 +1,57 @@
+.stopwatch {
+  background: transparent;
+  width: 90%;
+  max-width: 600px;
+  margin: 0px auto 0px;
+  text-align: center;
+  padding: 40px 0;
+  color: #fff;
+  /* box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2); */
+}
+.stopwatch h3 {
+  font-size: 30px;
+  font-weight: 300;
+  color: antiquewhite;
+}
+.stopwatch h1 {
+  margin-top: 20px;
+  font-size: 50px;
+  font-weight: 300;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button img {
+  width: 50px;
+  margin: 0 20px;
+  cursor: pointer;
+}
+.button img:nth-child(2) {
+  width: 80px;
+}
+.buttons:hover {
+  opacity: 0.7;
+}
+/* ----------------------------------------------clock------------------------------------------- */
+.clock {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 20px;
+}
+.clock h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: antiquewhite;
+}
+.clock .time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}

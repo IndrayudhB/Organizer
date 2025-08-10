@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Organizer</title>
+    <link rel="stylesheet" href="organizer.css" />
+    <link rel="stylesheet" href="notepad.css" />
+    <link rel="stylesheet" href="Transition style.css" />
+    <link rel="stylesheet" href="todo.css" />
+    <link rel="stylesheet" href="stopwatch and clock.css" />
+    <link rel="stylesheet" href="calender.css" />
+    <link rel="stylesheet" href="./calender big.css" />
+    <link rel="stylesheet" href="./evo-calendar.min.css" />
+    <link rel="stylesheet" href="./evo-calendar.midnight-blue.min.css" />
+    <link rel="stylesheet" href="./progress-bar.css" />
+    <link rel="stylesheet" href="./footer.css" />
+    <link rel="stylesheet" href="./media quary.css" />
+    <script
+      src="https://kit.fontawesome.com/183ac714c4.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--!=====================================transition=================================-->
+    <div class="transition">
+      <div class="transition-row row-1">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+      <div class="transition-row row-2">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+    </div>
+    <!--!=====================================header=================================-->
+    <header class="header">
+      <div class="app">
+        <nav>
+          <div class="nav-items">
+            <a href="./index.html">HOME</a>
+            <a href="./about.html">ABOUT</a>
+            <!--<div class="logo">
+          <img src="./images/logo.png" />
+        </div>-->
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--!=====================================main=================================-->
+    <div class="main">
+      <div class="container">
+        <!--!=====================================left=================================-->
+        <div class="left-side">
+          <div class="todo-app">
+            <h2>TODO List <img src="images/icon.png" /></h2>
+            <div class="row">
+              <input type="search" id="input-box" placeholder="Add your task" />
+              <button onclick="addTask()">Add</button>
+            </div>
+            <ul id="list-container"></ul>
+            <div id="progress-container" class="progress-container">
+              <div id="progress-bar" class="progress-bar"></div>
+              <div id="progress-text" class="progress-text">0% Completed</div>
+            </div>
+          </div>
+        </div>
+        <!--!=====================================middle=================================-->
+        <div class="middle-side">
+          <div id="downloadNotesBtn" class="download" onclick="savePageText()">
+            <i class="fa-solid fa-download"></i>
+          </div>
+          <div class="notepad-section">
+            <form action="">
+              <input type="color" id="color" value="#e6b905" />
+              <button type="button" id="createButton">+</button>
+            </form>
+            <div id="list"></div>
+          </div>
+        </div>
+
+        <!--!=====================================middle=================================-->
+        <div class="right-side">
+          <div class="clock">
+            <h3>CLOCK</h3>
+            <div class="time">
+              <div class="hourC">00</div>
+              <div>:</div>
+              <div class="minC">00</div>
+              <div>:</div>
+              <div class="secC">00</div>
+            </div>
+            <div style="font-size: 40px" class="dots">.</div>
+          </div>
+          <div class="division">
+            __________________________________________________
+          </div>
+          <div class="stopwatch">
+            <h3>TIMER</h3>
+            <h1 id="displayTime">00:00:00</h1>
+            <div class="button">
+              <img
+                class="buttons btn1"
+                src="./images/stop.png"
+                onclick="watchPause()"
+              />
+              <img
+                class="buttons btn2"
+                src="./images/start.png"
+                onclick="watchStart()"
+              />
+              <img
+                class="buttons btn3"
+                src="./images/reset.png"
+                onclick="watchReset()"
+              />
+            </div>
+          </div>
+          <div class="division">
+            __________________________________________________
+          </div>
+          <div class="calender">
+            <div class="calender-body">
+              <div class="block1">
+                <div class="date">12</div>
+                <div class="day">friday</div>
+              </div>
+              <div class="block2">
+                <div class="month">april</div>
+                <div class="year">2025</div>
+              </div>
+            </div>
+            <div style="font-family: Arial" class="extension">+</div>
+          </div>
+        </div>
+        <div class="calendar-big">
+          <div class="msg"></div>
+          <div style="font-family: Arial" class="extension extension-close">
+            X
+          </div>
+          <div id="calendar"></div>
+        </div>
+      </div>
+    </div>
+    <!--!=====================================FOOTER/GAMES=================================-->
+    <div class="footer-trigger"></div>
+    <div class="footer">
+      <div class="texts">Bored doing tasks? check out my games!!</div>
+      <div class="link">
+        <a class="game-link" href="./Home.html">Games</a>
+      </div>
+    </div>
+
+    <!--!=====================================END=================================-->
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+    <script src="./evo-calendar.min.js"></script>
+    <script src="./download.js"></script>
+    <script src="./calender big.js"></script>
+    <script src="./todo.js"></script>
+    <script src="./calender.js"></script>
+    <script src="./stopwatch and clock.js"></script>
+    <script src="./notepad.js"></script>
+    <script src="./transition.js"></script>
+    <script src="./home.js"></script>
+    <script src="./progress-bar.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  </body>
+</html>

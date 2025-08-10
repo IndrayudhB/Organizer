@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #232b2b, #2c2c2c);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #20c997;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 10px;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: linear-gradient(90deg, #1a1a1a, #5a189a);
+  backdrop-filter: blur(20px);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+/*-----=====================================hero=================================--*/
+.hero {
+  position: relative;
+  width: 100;
+  height: 100vh;
+  padding-top: 75px;
+}
+.hero-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.hero-text {
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 1;
+  top: 100px;
+  margin-left: 20px;
+  background: linear-gradient(135deg, #1a1a1a, #343a40);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  height: 350px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: #fff;
+}
+.hero-text h1 {
+  font-size: 70px;
+  padding-bottom: 20px;
+  border-radius: 30px;
+  color: #5a189a;
+}
+.hero-text .para {
+  max-width: 550px;
+  padding-bottom: 20px;
+  color: #d3d3d3;
+}
+.btn {
+  margin-top: 15px;
+  padding: 15px;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 30px;
+  margin-left: 350px;
+  background: #5a189a;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.btn:hover {
+  opacity: 0.7;
+  color: gray;
+}
+.btn:active {
+  background: aqua;
+  font-size: 14px;
+  color: #892cdc;
+}
+.hero-text2 {
+  position: absolute;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 1;
+  bottom: 100px;
+  margin-left: 20px;
+  background: linear-gradient(135deg, #1a1a1a, #343a40);
+  backdrop-filter: blur(30px);
+  border-radius: 20px;
+  height: 100px;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: red;
+  width: 600px;
+  display: none;
+}
+.hero:hover ~ .hero-text2 {
+  display: block;
+}

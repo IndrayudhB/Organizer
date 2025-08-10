@@ -1,0 +1,59 @@
+/* Trigger area at bottom 5px - invisible */
+.footer-trigger {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  z-index: 19;
+  background: transparent; /* Invisible */
+}
+
+/* Footer - initially hidden */
+.footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  left: 0;
+  width: 100%;
+  background: #000;
+  color: white;
+  opacity: 0;
+  pointer-events: none; /* Prevent interaction when hidden */
+  transition: opacity 0.5s ease;
+  padding: 10px;
+  box-sizing: border-box;
+  z-index: 20; /* below the trigger */
+  font-size: 20px;
+}
+/* Show footer when trigger is hovered */
+.footer-trigger:hover + .footer,
+.footer:hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+.game-link {
+  cursor: pointer;
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: none;
+  background: linear-gradient(
+    to right,
+    #007bff,
+    #0266d1,
+    #014996
+  ); /* Example button color */
+  color: white;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+  user-select: none;
+}
+
+.game-link:active {
+  opacity: 0.7;
+  transform: scale(0.95);
+}

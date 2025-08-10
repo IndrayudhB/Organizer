@@ -1,0 +1,72 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background: rgb(77, 72, 72);
+}
+html {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  padding: 10px;
+  padding-left: 2em;
+  padding-bottom: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  background: rgb(29, 28, 28);
+  backdrop-filter: blur(20px);
+}
+
+.nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+}
+.main {
+  position: relative;
+  top: 80px;
+}
+.main .container {
+  display: grid;
+  grid-template-columns: 21vw 1fr 21vw;
+}
+.left-side {
+  display: flex;
+  background: #343434;
+  height: 90vh;
+}
+.right-side {
+  background: #353935;
+}
+.middle-side {
+  height: 100%;
+  margin: 0;
+  /* background: rgb(77, 72, 72); light wood base color */
+  background-image: linear-gradient(rgba(13, 11, 10, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(13, 11, 10, 0.15) 1px, transparent 1px);
+  background-size: 40px 40px; /* grid spacing resembling workbench marks */
+}
+
+.division {
+  color: white;
+}
